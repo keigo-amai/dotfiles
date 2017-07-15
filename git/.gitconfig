@@ -1,0 +1,25 @@
+[core]
+	excludesfile = /Users/keigoamai/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = keigo.amai
+	email = amaikeigo.10@gmail.com
+
+[alias]
+    ci = commit
+	ch = checkout
+	st = status
+	ca = commit --amend
+	rhh = reset --hard
+	rh = reset --soft
+	rhh1 = reset HEAD~1 --hard
+	rh1 = reset HEAD~1 --soft
+	rhh2 = reset HEAD~2 --hard
+	rh2 = reset HEAD~2 --soft
+	rhh3 = reset HEAD~3 --hard
+	rh3 = reset HEAD~3 --soft
