@@ -1,10 +1,12 @@
 export PATH=.rbenv/shims:/opt/local/bin:/usr/local/bin:/opt/local/sbin:/usr/local/mysql/bin/:/Applications:$PATH
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export ANDROID_HOME=/Users/kamai/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 export SVN_EDITOR="vim"
 export GIT_EDITOR="vim"
 export PAGER=~/bin/vimpager
 export LANG=ja_JP.UTF-8
 WORDCHARS=${WORDCHARS:s,/,,}
-
 ################################################################
 # ディレクトリ移動
 ################################################################

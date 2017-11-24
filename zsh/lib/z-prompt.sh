@@ -3,7 +3,7 @@ echo "include zsh-prompt.sh"
 ################################################################
 # プロンプト
 ################################################################
-export __GIT_PROMPT_DIR=git-prompt
+export __GIT_PROMPT_DIR=$ZDOTDIR/lib/git_prompt
 # Initialize colors.
 autoload -U colors
 colors
