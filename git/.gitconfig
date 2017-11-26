@@ -12,7 +12,7 @@
 
 [alias]
   ci = commit
-	ch = checkout
+	co = checkout
 	st = status
 	ca = commit --amend
 	rhh = reset --hard

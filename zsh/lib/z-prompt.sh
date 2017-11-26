@@ -95,4 +95,6 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="…"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
 
 #PROMPT="%n@%~%# "
-PROMPT='%n@%~%b$(git_super_status) %# '
+PROMPT='@%~%b
+%n %# '
+RPROMPT='$(git_super_status)'
