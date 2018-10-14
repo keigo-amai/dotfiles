@@ -14,7 +14,7 @@ branch, error = gitsym.communicate()
 
 error_string = error.decode('utf-8')
 
-if 'fatal: Not a git repository' in error_string:
+if 'fatal: not a git repository (or any of the parent directories): .git' in error_string:
 	sys.exit(0)
 
 branch = branch.strip()[11:]
@@ -63,7 +63,7 @@ else:
 			remote += '%s%s' % (symbols['ahead of'], ahead)
 
 out = '\n'.join([
-	str(branch),
+	branch.decode('UTF-8'),
 	remote,
 	staged,
 	conflicts,
